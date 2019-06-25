@@ -1,0 +1,20 @@
+<h2>One way Binding</h2>
+
+<mat-form-field>
+    <input matInput placeholder="nombre" (keyup.enter)=recepcionarValor($event)>
+</mat-form-field>
+
+<h2>Hola, {{nombre}}</h2>
+
+<h2>two way Binding</h2>
+<mat-form-field>
+    <input matInput placeholder="apodo" [(ngModel)]="apodo">
+</mat-form-field>
+
+<h2>Hola, {{apodo}}</h2>
+
+<button mat-button (click)="agregar()">Agregar</button>
+
+<ul>
+    <li *ngFor="let e of lista">{{e}}</li>
+</ul>
