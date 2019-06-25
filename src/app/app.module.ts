@@ -9,6 +9,7 @@ import { compAComponent } from './comp-a/comp-a.compenent';
 import { CompCComponent } from './comp-c/comp-c.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { CompDComponent } from './comp-d/comp-d.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     CompBComponent,
     compAComponent,
-    CompCComponent
+    CompCComponent,
+    CompDComponent
   ],
   imports: [
     BrowserModule,
